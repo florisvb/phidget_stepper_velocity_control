@@ -7,7 +7,8 @@ Phidgets links:
 # Installation
 
 ### Install the ROS package
-* Clone this directory into your catkin workspace: `$ git clone https://github.com/florisvb/phidget_stepper_velocity_control.git`
+* Clone this directory into your catkin workspace: 
+* `$ git clone https://github.com/florisvb/phidget_stepper_velocity_control.git`
 * Run `$ catkin_make` from the catkin base directory
 
 ### Create a udev rule
