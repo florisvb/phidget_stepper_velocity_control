@@ -9,6 +9,12 @@ Phidgets links:
 * Clone this directory into your catkin workspace: `git clone xxxx`
 * Run `$ catkin_make` from the catkin base directory
 
+### Create a udev rule
+* Check your phidget serial number: plug it in, and type `$ dmesg`, note the serial number
+* Edit the file `99-phidget-stepper-505962.rules` to reflect the correct serial number
+* Copy the updated rules file to `/etc/udev/rules.d` (ie. `sudo cp 99-phidget-stepper-505962.rules /etc/udev/rules.d`)
+* Reload your rules: `$ sudo udevadm control --reload-rules && sudo udevadm trigger`
+
 # Running the node
 
 * With `roscore` running, launch the node with instructions to the topic to listen to (Float32 topic):
