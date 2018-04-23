@@ -17,6 +17,11 @@ Phidgets links:
 * Copy the updated rules file to `/etc/udev/rules.d` (ie. `sudo cp 99-phidget-stepper-505962.rules /etc/udev/rules.d`)
 * Reload your rules: `$ sudo udevadm control --reload-rules && sudo udevadm trigger`
 
+### Install phidgets
+* Download and install [libphidget22](https://www.phidgets.com/docs/OS_-_Linux)
+* Download and install [python library](https://www.phidgets.com/docs/Language_-_Python#Install_Phidget_Python_Module_for_Linux)
+* You likely will need to add this to your bashrc: `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib`
+
 # Running the node
 
 * With `roscore` running, launch the node with instructions to the topic to listen to (Float32 topic):
