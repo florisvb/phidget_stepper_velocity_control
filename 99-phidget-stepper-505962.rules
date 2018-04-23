@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="06c2", ATTRS{idProduct}=="007b", ATTRS{serial}=="505962", GROUP="plugdev", SYMLINK+="phidgetsstepper505962", MODE:="0666"
