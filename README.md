@@ -6,6 +6,7 @@ Phidgets links:
 
 # Installation
 
+### Install the ROS package
 * Clone this directory into your catkin workspace: `git clone xxxx`
 * Run `$ catkin_make` from the catkin base directory
 
